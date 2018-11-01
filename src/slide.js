@@ -12,7 +12,20 @@ function newslide()
     })
     
 
+    slidechange();
 }
 
+function slidechange()
+{
+let sli= document.getElementsByClassName("slide");
+for (let x=0 ;x<sli.length;x++)
+{
+ sli[x].addEventListener("click",function()
+ {
+     alert();
+     document.getElementById("editor").children.innerHTML="";
+ })
+}
+}
 
 export{newslide}

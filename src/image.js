@@ -14,7 +14,8 @@ import {display,blur,invisible} from './features.js';
  
  function previewFile(){
 
-    let left = ((Math.random()*100)*2+(Math.random()*100)*3).toFixed();
+    let left = ((Math.random()*100)*2+(Math.random()*100)*3+100).toFixed();
+    // left+=100;
     let editor= document.getElementById("editor");
     
     let top=((Math.random()*100)*2+100).toFixed();
@@ -35,7 +36,7 @@ import {display,blur,invisible} from './features.js';
     x+="<div class='resizer right-line line'></div>";
     x+="<div class='resizer top-line line'></div>";
     x+="<div class='resizer bottom-line line'></div>";
-    x+="<img src='' class='center image' alt='Image preview...'>";
+    x+="<img src='' class='center_i image' alt='Image preview...'>";
   
     x+=" </div>";
     x+="</div>";
