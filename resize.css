@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   background:white;
@@ -134,11 +138,74 @@ button {
 {
   width: 90%;
   height: 90%;
-  /* margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px; */
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  left: 5%;
+  position: absolute;
+  /* background-color: lightcoral; */
   
+}
+
+aside{
+  border :1px inset darkgray;
+  height: 500px;
+  width:20%;
+  float:left;
+  background-color: #E8E8E8; 
+}
+
+.slide
+{
+  width:15%;
+  height: 15% ;
+  margin-top: 10px;
+  margin-left: 20px; 
+  position: absolute;
+  background-color: white;
+  border :1px inset darkgray;
+  float: right;
+}
+
+section{
+
+  border :1px inset #E8E8E8;
+   height: 500px;
+   width: 80%;
+   background-color: #E8E8E8; 
+   float: left;
+   
+}
+
+.canvas
+{
+  background-color: whitesmoke;
+  width: 70%;
+  height: 70%;
+  margin-top: 3%;
+margin-left: 5%; 
+position: absolute;
+border :1px inset #E8E8E8;
+}
+
+.clear {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header{
+  background-color: lightgray;
+   font-style:  italic ; 
+   height: 30px;
+   font-size: 20px;
+
+}
+
+.center_i
+{
+  width: 90%;
+  height: 90%;
   top: 5%;
   left: 5%;
   right: 5%;

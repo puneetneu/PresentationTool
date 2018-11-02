@@ -6,15 +6,16 @@
     <title>clientX/clientY example</title>
 
     <link rel="stylesheet" href="resize.css">
+    
   </head>
   <body >
        
-    <header style="background-color: lightgray; font-family: italic ; height: 30px">
-       Unititled Presentation
+    <header>
+        Untitled presentation
 
     </header>  
     <div class="clearfix" style="padding: 10px; background-color: darkgrey" >
-    
+             <button  class="fontStyle" id="addslide"> &#43; </button> 
             <button id="italic" class="fontStyle"  title="Italicize Highlighted Text"><i>I</i>
             </button>
             <button id="bold" class="fontStyle"  title="Bold Highlighted Text"><b>B</b>
@@ -23,9 +24,33 @@
             </button>
             <button class="fontStyle" id="addtext" > Text 
             </button>
+            <!-- <button class="fontStyle" id="addslide" > Slide 
+            </button> -->
             <input type="file" name="Image" id="image">
+            
   </div>
-    <div style="border :2px inset black; height: 500px;" id="editor">
+  <div >
+      <aside class="clearfix" id="addslide">
+        
+            <div class="slide">
+
+              </div>
+              
+          
+        </aside>
+      
+        <section id="editor">
+          <div class="canvas" >
+      
+      
+          </div>  
+          
+        </section>
+
+  </div>
+  
+     
+    <!-- <div style="border :2px inset black; height: 500px;" id="editor"> -->
             <!-- <div class='resizable' >
                     <div class='resizers clearfix' >
                      
@@ -48,15 +73,14 @@
             </div> -->
 
              
-    </div>
+    <!-- </div> -->
 
 
 
    <script src="main.js">  </script>
+   <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
    
-
-
-
+   
               
              
           
