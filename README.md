@@ -61,6 +61,14 @@ http://es6-features.org/#Constants
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+https://ckeditor.com/
+
+https://medium.com/the-z/making-a-resizable-div-in-js-is-not-easy-as-you-think-bda19a1bc53d
+
+https://javascript.info/mouse-drag-and-drop
+
+
+
 
 
 
