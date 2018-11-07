@@ -1,6 +1,7 @@
 import  {re} from'./resize.js';
 import {drag} from'./drag.js';
 import {display,blur,invisible} from './features.js';
+//call function on file change
  function image()
  {
  
@@ -8,10 +9,10 @@ import {display,blur,invisible} from './features.js';
  img.onchange=function()
  {
      previewFile();
-     document.querySelector('input[type=file]').value="";
-     
+     document.querySelector('input[type=file]').value="";     
  }
  
+ //create image
  function previewFile(){
 
     let left = ((Math.random()*100)*2+(Math.random()*100)*3+100).toFixed();
@@ -20,7 +21,7 @@ import {display,blur,invisible} from './features.js';
     
     let top=((Math.random()*100)*2+100).toFixed();
     
-
+    //creating boundary div and appending imge
     let x= "<div style='left:"+ left +"px; top:"+ top +"px;' class='resizable' >";
     x+="<div class='resizers' >";
     
@@ -41,17 +42,13 @@ import {display,blur,invisible} from './features.js';
     x+=" </div>";
     x+="</div>";
 
-
-   //let editor= document.getElementById("editor");
    editor.innerHTML+=x;
-
 
     re();
     drag();
     invisible();
     display();
     blurimage();
-
 
        var pre = document.getElementsByClassName('image'); //selects the query named img
        var preview =pre[pre.length-1];
@@ -73,8 +70,7 @@ import {display,blur,invisible} from './features.js';
 
   export{image};
 
-  
-
+ //on click outside the image boundary will not display 
   function blurimage()
 {
 

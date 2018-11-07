@@ -1,6 +1,8 @@
 import  {re} from'./resize.js';
 import {drag} from'./drag.js';
 import {display,blur,invisible} from './features.js';
+
+//create text box
 function add_text()
 {
 let addtext=document.getElementById("addtext");
@@ -18,8 +20,10 @@ addtext.addEventListener("click", function(){
 })
 }
 
+//create text box on the click position
 function drop(e)
 {
+    //creating boundary div and appending text div
     let x= "<div style='left:"+ e.pageX +"px; top:"+ e.pageY +"px;' class='resizable' >";
     x+="<div class='resizers' >";
     
@@ -36,8 +40,7 @@ function drop(e)
     x+="<div class='resizer top-line line'></div>";
     x+="<div class='resizer bottom-line line'></div>";
     x+="<div placeholder='Click To Add Text' contenteditable='true' class='center' >";
-   // x+="<input type='text'  class='center'>";
-  
+ 
      x+=" </div>";
     x+="</div>";
     editor.innerHTML+=x;

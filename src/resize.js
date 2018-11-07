@@ -1,4 +1,5 @@
- function re(){
+// resize the prticular div
+function re(){
 
 
   let elements = document.getElementsByClassName("resizable");
@@ -16,6 +17,7 @@
     let original_mouse_y = 0;
     for (let i = 0;i < resizers.length; i++) {
       const currentResizer = resizers[i];
+      //on mouse down on resizer calling function
       currentResizer.addEventListener('mousedown', function(e) {
         e.preventDefault()
         original_width = parseFloat(getComputedStyle(element, null).getPropertyValue('width').replace('px', ''));
@@ -24,7 +26,9 @@
         original_y = element.getBoundingClientRect().top;
         original_mouse_x = e.pageX;
         original_mouse_y = e.pageY;
+        //on mouse move on resizer calling function resize
         window.addEventListener('mousemove', resize)
+        //on mouse stop on resizer calling function stopresize
         window.addEventListener('mouseup', stopResize)
       })
       
@@ -67,8 +71,6 @@
         
       }
 
-
-        
       }
       
       function stopResize() {

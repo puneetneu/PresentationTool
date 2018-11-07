@@ -1,4 +1,4 @@
-
+//drag the particular div
 function drag()
 {
 
@@ -21,7 +21,7 @@ for(let x=0; x<ball1.length ; x++)
 
   ball.style.position = 'absolute';
   ball.style.zIndex = 1000;
-  //document.body.append(ball);
+  
 
   moveAt(event.pageX, event.pageY);
 
@@ -33,7 +33,7 @@ for(let x=0; x<ball1.length ; x++)
 
   function onMouseMove(event) {
     moveAt(event.pageX, event.pageY);
-  }
+  } 
 
   // (3) move the ball on mousemove
   document.addEventListener('mousemove', onMouseMove);
@@ -46,9 +46,7 @@ for(let x=0; x<ball1.length ; x++)
 
 };
 
-// ball.ondragstart = function() {
-//   return false;
-// };
+
 
 }
 

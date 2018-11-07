@@ -1,4 +1,4 @@
-
+// new slide
 function newslide()
 {
 
@@ -17,15 +17,15 @@ function newslide()
 
 function slidechange()
 {
-let sli= document.getElementsByClassName("slide");
-for (let x=0 ;x<sli.length;x++)
-{
- sli[x].addEventListener("click",function()
- {
-     alert();
-     document.getElementById("editor").children.innerHTML="";
- })
-}
+// let sli= document.getElementsByClassName("slide");
+// for (let x=0 ;x<sli.length;x++)
+// {
+//  sli[x].addEventListener("click",function()
+//  {
+//      alert();
+//      document.getElementById("editor").children.innerHTML="";
+//  })
+// }
 }
 
 export{newslide}
