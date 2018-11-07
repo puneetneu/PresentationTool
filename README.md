@@ -1,4 +1,4 @@
-To Do App
+Slide Presentation App
 ----------------------
 Slide Presentation app using javascript,html,css,webpack
 
